@@ -17,11 +17,11 @@
 
 ### Inside `backend` folder:
 1. Create an `.env` file that contains:
-  ```env
-  ConnectionStrings__DefaultConnection=Data Source=...;Initial Catalog=your_db_name;Integrated Security=True;TrustServerCertificate=True;TrustServerCertificate=True;
-  Cors__AllowedOrigins__0=http://localhost:5173
-  ```
-  *Note: Change the env credentials depending on your project configuration*
+    ```env
+    ConnectionStrings__DefaultConnection=Data Source=...;Initial Catalog=your_db_name;Integrated Security=True;TrustServerCertificate=True;TrustServerCertificate=True;
+    Cors__AllowedOrigins__0=http://localhost:5173
+    ```
+    *Note: Change the env credentials depending on your project configuration*
 2. Run this if you haven't installed entity framework before:
     ```cmd
     dotnet tool install --global dotnet-ef --version 8.0.0
@@ -39,8 +39,7 @@
     ```env
     VITE_API_URL=http://localhost:5163
     ```
-    **NOTE**:
-      - *Change `VITE_API_URL` into the actual backend host without trailing slash.*
+    **NOTE**: *Change `VITE_API_URL` into the actual backend host without trailing slash.*
 2. Run `npm install` to install necessary packages.
 3. Run `npm run dev` to test your development frontend.
 
@@ -52,7 +51,7 @@ You don’t need to install anything manually, as all dependencies are already m
 This section is provided for reference only, to give you insight into how the project was set up.
 
 ## Backend Dependencies:
-*(Note: Some dependencies are intentionally using old versions for stable releases)*\
+*(Note: Some dependencies are intentionally using old versions for stable releases)*
 - `dotnet add package Microsoft.EntityFrameworkCore --version 8.0.0`
 - `dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 8.0.0`
 - `dotnet add package Microsoft.EntityFrameworkCore.Tools --version 8.0.0`
