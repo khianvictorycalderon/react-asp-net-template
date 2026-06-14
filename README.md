@@ -15,7 +15,7 @@
 
 ---
 
-### Inside `backend` folder:
+### Setup inside `backend` folder:
 1. Create an `.env` file that contains:
     ```env
     ConnectionStrings__DefaultConnection=Data Source=...;Initial Catalog=your_db_name;Integrated Security=True;TrustServerCertificate=True;TrustServerCertificate=True;
@@ -34,7 +34,7 @@
     ```
 4. Run `dotnet watch run` to run your backend.
 
-### Inside `frontend` folder:
+### Setup inside `frontend` folder:
 1.  Create an `.env` file that contains:
     ```env
     VITE_API_URL=http://localhost:5163
