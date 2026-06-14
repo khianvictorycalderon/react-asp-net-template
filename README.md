@@ -16,12 +16,17 @@
 ---
 
 ### Setup inside `backend` folder:
-1. Create an `.env` file that contains:
-    ```env
-    ConnectionStrings__DefaultConnection=Data Source=...;Initial Catalog=your_db_name;Integrated Security=True;TrustServerCertificate=True;TrustServerCertificate=True;
-    Cors__AllowedOrigins__0=http://localhost:5173
+1. On `appsettings.Development.json` file, update these parts depending on your project configuration:
+    ```json
+    "ConnectionStrings": {
+        "DefaultConnection": "..."
+    },
+    "Cors": {
+        "AllowedOrigins": [
+            "https://origin1.com"
+        ]
+    }
     ```
-    *Note: Change the env credentials depending on your project configuration*
 2. Run this if you haven't installed entity framework before:
     ```cmd
     dotnet tool install --global dotnet-ef --version 8.0.0
