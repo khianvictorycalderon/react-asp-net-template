@@ -64,9 +64,9 @@ This section is provided for reference only, to give you insight into how the pr
 
 ## Backend Dependencies:
 *(Note: Some dependencies are intentionally using old versions for stable releases)*
-- `dotnet add package Microsoft.EntityFrameworkCore --version 8.0.0`
-- `dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 8.0.0`
-- `dotnet add package Microsoft.EntityFrameworkCore.Tools --version 8.0.0`
+- `Microsoft.EntityFrameworkCore 8.0.4`
+- `Microsoft.EntityFrameworkCore.Sqlite 8.0.4`
+- `Microsoft.EntityFrameworkCore.Tools 8.0.4`
     
 ## Frontend Dependencies & Configuration
 The following is a list of installed dependencies and configuration settings used in this project.
@@ -74,7 +74,9 @@ You don’t need to install anything manually, as all dependencies are already m
 This section is provided for reference only, to give you insight into how the project was set up.
 
 ## Frontend Dependencies
-- `npm install tailwindcss @tailwindcss/vite axios`
+- `tailwindcss`
+- `@tailwindcss/vite`
+- `axios`
 
 ## Frontend Configuration
 - Update `vite.config.ts`:
