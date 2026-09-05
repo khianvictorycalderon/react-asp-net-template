@@ -4,14 +4,13 @@
 - **Vite React (Typescript)**
 - **Tailwind CSS**
 - **ASP.NET Core Web API**
-- **SQL Server**
+- **SQLite**
 
 ---
 
 ## Prerequisites
 - NodeJS
 - .NET Core
-- SQL Server
 
 ---
 
@@ -26,9 +25,6 @@
             }
         },
         "AllowedHosts": "*",
-        "ConnectionStrings": {
-            "DefaultConnection": "..."
-        },
         "Cors": {
             "AllowedOrigins": [
             	"...",
@@ -40,9 +36,9 @@
     **NOTE**: *Update all the `"..."` into actual credentials*
 2. Run this if you haven't installed entity framework before:
     ```cmd
-    dotnet tool install --global dotnet-ef --version 8.0.0
+    dotnet tool install --global dotnet-ef --version 8.0.4
     ```
-    *NOTE: Latest version is unstable with the current setup so I use 8.0.0*
+    *NOTE: Latest version is unstable with the current setup so I use 8.0.4*
 3. Run the following CMD comamnds:
     *To actually create tables in the database:*
     ```
